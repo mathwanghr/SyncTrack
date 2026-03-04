@@ -314,14 +314,13 @@ The extracted JSON files can then be used directly with `CBD.py` using the `--be
 
 If you find this code or our paper useful for your research, please cite:
 
-<!-- ```bibtex
-@inproceedings{synctrack2024,
-  title={SyncTrack: Synchronizing Multi-Track Music Generation},
-  author={Lastname, Firstname and Lastname, Firstname},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2024}
+```bibtex
+@inproceedings{wangsynctrack,
+  title={SyncTrack: Rhythmic Stability and Synchronization in Multi-Track Music Generation},
+  author={Wang, Hongrui and Zhang, Fan and Yu, Zhiyuan and Zhou, Ziya and Chen, Xi and Yang, Can and Wang, Yang},
+  booktitle={The Fourteenth International Conference on Learning Representations}
 }
-``` -->
+```
 
 ## 🙏 Acknowledgements
 
