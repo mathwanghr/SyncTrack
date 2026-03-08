@@ -131,7 +131,7 @@ python eval_metrics/CBS.py --folder /path/to/generated/stems
 
 
 
-### 3. Inner-track Rhythmic Stability (IRS).
+### 3. Inner-track Rhythmic Stability (IRS)
 `IRS.py` quantifies temporal consistency by averaging the standard deviation of the Inter-Beat Interval across all samples for each track.
 
 **Key Parameters:**
