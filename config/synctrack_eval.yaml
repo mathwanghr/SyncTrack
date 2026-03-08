@@ -80,7 +80,7 @@ data:
         target_length: 1024
 
 model:
-  target: latent_diffusion.models.musicldm.MusicLDM
+  target: latent_diffusion.models.synctrack_eval.MusicLDM
   params:
     num_stems: 4
     base_learning_rate: 3.0e-05
@@ -177,3 +177,4 @@ model:
       unconditional_guidance_scale: 0.0
       ddim_sampling_steps: 200
       n_candidates_per_samples: 1
+      

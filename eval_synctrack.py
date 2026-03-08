@@ -13,7 +13,7 @@ import datetime
 from pathlib import Path
 
 from pytorch_lightning.strategies.ddp import DDPStrategy
-from latent_diffusion.models.musicldm_eval import MusicLDM
+from latent_diffusion.models.synctrack_eval import MusicLDM
 from utilities.data.dataset import AudiostockDataset, DS_10283_2325_Dataset
 
 from torch.utils.data import WeightedRandomSampler

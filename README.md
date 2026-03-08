@@ -31,7 +31,6 @@
 ## 🛠️ Prerequisites
 
 ### 1. Environment Setup
-Ensure you have the required dependencies installed. The codebase assumes a CUDA-enabled environment for efficient processing.
 
 ```bash
 # Clone the repository
@@ -44,7 +43,7 @@ conda activate synctrack
 pip install -r requirements.txt
 ```
 >
-> **Note:** For evaluation metrics, ensure you have the necessary audio processing libraries like `madmom` installed on your system.
+> **Note:** For evaluation metrics, ensure you have the necessary audio processing libraries `madmom` installed on your system.
 
 
 ### 2. Model Checkpoints
@@ -68,7 +67,7 @@ SyncTrack/
 
 ## 🚀 Training
 
-To train the SyncTrack model, use the `train_musicldm.py` script. The configuration is managed via YAML files.
+To train the SyncTrack model, use the `train_synctrack.py` script. The configuration is managed via YAML files.
 
 ### Configuration Setup
 In `config/synctrack_train.yaml`, please configure the following paths before starting:
@@ -78,12 +77,12 @@ In `config/synctrack_train.yaml`, please configure the following paths before st
 
 ### Run Training
 ```bash
-python train_musicldm.py --config config/synctrack_train.yaml
+python train_synctrack.py --config config/synctrack_train.yaml
 ```
 
 ## ⚡ Inference & Evaluation
 
-To generate samples or evaluate the model on the test set, use the `eval_musicldm.py` script.
+To generate samples or evaluate the model on the test set, use the `eval_synctrack.py` script.
 
 
 ### Configuration Setup
@@ -94,14 +93,11 @@ In `config/synctrack_eval.yaml`, please configure the following:
 - `model.params.ckpt_path`: Path to the model checkpoint.
 
 > 🌟 **Use [Our Pre-trained Model](https://zenodo.org/records/18797721?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjlhYzY4MDRiLWE4YzktNGRkOC05MzQwLTEwYzc5ZTI2MjM4MCIsImRhdGEiOnt9LCJyYW5kb20iOiIxOGUxMTQxNTI1ZGQyZmU0NGZjYjFmZjM0OThiNzJlNiJ9.iPuxzy7aIE1HFs0q1EVsVc3r87Mq5FyizZPnDr21-Nu6hpTbfpb7omGNZyg4G3JckMBs_qOZTuLSi5IiWONtqw)**
-> If you wish to evaluate using our pre-trained weights:
-> 1. Download **`synctrack_slakh2100_pretrained.ckpt`** from [Insert Link Here].
-> 2. Unzip and place the file into the `ckpt/` directory.
-> 3. Set the config path: `model.params.ckpt_path: "ckpt/synctrack_slakh2100_pretrained.ckpt"`.
+
 
 ### Run Inference
 ```bash
-python eval_musicldm.py --config config/synctrack_eval.yaml
+python eval_synctrack.py --config config/synctrack_eval.yaml
 ```
 
 ## 📊 Evaluation Metrics
@@ -121,7 +117,7 @@ python eval_metrics/CBD.py --folder /path/to/generated/stems
 
 
 ### 2. Cross-track Beat Synchronization (CBS)
-`CBS.py` CBS measures rhythmic synchronization among multiple tracks.
+`CBS.py` measures rhythmic synchronization among multiple tracks.
 
 **Key Parameters:**
 - `--folder`: Path to the directory containing audio stem subfolders (`stem_0`, `stem_1`, `stem_2` and `stem_3`).
