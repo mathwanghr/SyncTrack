@@ -4,7 +4,7 @@
 
 <!-- <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 <a href="https://lightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a> -->
-[![Paper](https://img.shields.io/badge/OpenReview-Paper-b31b1b.svg)](https://openreview.net/forum?id=Jf7i0a8dr0)
+[![Paper](https://img.shields.io/badge/arxiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2603.01101)
 [![HomePage](https://img.shields.io/badge/HomePage-SyncTrack-blue)](https://synctrack-v1.github.io/)
 [![Conference](https://img.shields.io/badge/ICLR-2026-green)](https://iclr.cc//)
 
